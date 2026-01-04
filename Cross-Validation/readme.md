@@ -75,7 +75,7 @@ To apply stratification, the target must first be discretized.
 **Bin count selection (Sturges’ Rule)**
 
 [
-{Number of bins} = 1 + \log_2(N)
+${Number of bins} = 1 + \log_2(N)$
 ]
 
 where
