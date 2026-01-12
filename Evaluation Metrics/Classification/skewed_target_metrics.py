@@ -143,3 +143,7 @@ def fpr(y_true, y_pred):
     return fp / (tn + fp) 
 
 ## For ROC-AUC you can use, metrics.roc_auc_score from Sklearn
+"""
+Select the best threshold from the leftmost top point in the ROC curve 
+X-axis: FPR, Y-axis: TPR 
+"""
