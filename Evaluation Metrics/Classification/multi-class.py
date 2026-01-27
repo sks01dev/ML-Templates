@@ -1,7 +1,7 @@
 # Multiclass classification metrics
 
 import numpy as np 
-
+import sklearn
 
 ## Accumulate the precision for each class and then average them. 
 def macro_precision(y_true, y_pred): 
@@ -122,3 +122,10 @@ def weighted_precision(y_true, y_pred):
     # calculate overall precision by dividing by 
     # total number of samples 
     overall_precision = precision / len(y_true)
+    return overall_precision
+
+## Sklearn implementation
+
+## sklearn.metrics.precision_score(y_true, y_pred, average='macro')
+
+## You can change the average parameter with 'macro', 'micro', 'weighted'
