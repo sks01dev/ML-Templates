@@ -64,3 +64,8 @@ if __name__ == "__main__":
     best_params = dict(zip(param_names, result.x))
     print(f"Best Accuracy: {-1 * result.fun}")
     print(f"Best Parameters: {best_params}")
+
+
+# plot the results
+from skopt.plots import plot_convergence 
+plot_convergence(result)
