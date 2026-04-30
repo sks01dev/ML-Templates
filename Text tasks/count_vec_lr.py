@@ -59,6 +59,4 @@ if __name__ == "__main__":
 
         # 5. Metrics
         accuracy = metrics.accuracy_score(test_df.sentiment, preds)
-        print(f"Fold: {fold_}")
-        print(f"Accuracy = {accuracy}")
-        print("-" * 20)
+        
