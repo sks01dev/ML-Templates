@@ -14,3 +14,4 @@ ctv = CountVectorizer(tokenizer=word_tokenize, token_pattern=None)
 # fit the vectorizer on corpus
 ctv.fit(corpus)
 corpus_transformed = ctv.transform(corpus)
+print(ctv.vocabulary_)
